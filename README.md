@@ -35,8 +35,8 @@ optional arguments:
 #### Result format
 ```
 emb_256.npy:  Latent space of singing voice. (256 dimension numpy array)
-art_38:       Result of 38 class artist classification. (38 dimension numpy array)
-sc_2:         Result of singing voice characteristic. (2 dimension numpy array)
+art_38.npy:   Result of 38 class artist classification. (38 dimension numpy array)
+sc_2.npy:     Result of singing voice characteristic. (2 dimension numpy array)
 
 The list correspond to result numpy array:
 artist_list = [ '張惠妹', '郭靜', '蔡依林', '劉若英', '徐佳瑩', '田馥甄', '蔡健雅', '梁靜茹', '鄧紫棋', '孫燕姿',
