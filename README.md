@@ -11,7 +11,10 @@ Requires following packages:
 - librosa
 
 ### Usage
-put your audios in './input' and run main.py
+Put your audios in "./input" folder and run
+```
+python main.py or python3 main.py
+```
 #### main.py
 ```
 usage: main.py [-h] [-in IN_PATH] [-o OUT_PATH] [--cuda] [-gid GPU_INDEX]
