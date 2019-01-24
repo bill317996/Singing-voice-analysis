@@ -13,7 +13,11 @@ Requires following packages:
 ### Usage
 Put your audios in "./input" folder and run
 ```
-python main.py or python3 main.py
+python main.py
+```
+or
+```
+python3 main.py
 ```
 #### main.py
 ```
