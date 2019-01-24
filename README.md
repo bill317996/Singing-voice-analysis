@@ -11,7 +11,7 @@ Requires following packages:
 - librosa
 
 ### Usage
-Put your audios in "./input" folder and run
+Put your audio files in "./input/" folder and run
 ```
 python main.py
 ```
@@ -32,14 +32,14 @@ optional arguments:
   -gid GPU_INDEX, --gpu_index GPU_INDEX
                         Assign a gpu index for processing if cuda. (default: 0)
 ```
-#### result format
+#### Result format
 ```
-emb_256.npy: Latent space of singing voice. (256 dimension numpy array)
+emb_256.npy:  Latent space of singing voice. (256 dimension numpy array)
 art_38:       Result of 38 class artist classification. (38 dimension numpy array)
 sc_2:         Result of singing voice characteristic. (2 dimension numpy array)
 
 The list correspond to result numpy array:
-artist_list = ['張惠妹', '郭靜', '蔡依林', '劉若英', '徐佳瑩', '田馥甄', '蔡健雅', '梁靜茹', '鄧紫棋', '孫燕姿',
+artist_list = [ '張惠妹', '郭靜', '蔡依林', '劉若英', '徐佳瑩', '田馥甄', '蔡健雅', '梁靜茹', '鄧紫棋', '孫燕姿',
                 '費玉清', '張學友', '王力宏', '周杰倫', '陳奕迅', '林志炫', '林俊傑', '蕭敬騰', '盧廣仲', '李榮浩',
                 '郭美美', '羅志祥', 'Amy Winehouse', '方大同', '王心凌', 'Erykah Badu', 'Macy Gray', 'Rihanna', '潘瑋柏', 
                 '王若琳', 'Norah Jones', 'Pussycat Dolls', '畢書盡', '楊丞琳', '汪峰', '江美琪', 'Taylor Swift', '回聲樂團']
