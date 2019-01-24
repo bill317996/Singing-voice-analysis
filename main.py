@@ -154,11 +154,12 @@ def main(datadir, savedir, cuda, gid):
                 Save result
                 """
                 
-                if not os.path.exists(savedir+'/'+songname):
-                    os.makedirs(savedir+'/'+songname)
-                np.save(savedir+'/'+songname+'/emb_256.npy', pred_wss)
-                np.save(savedir+'/'+songname+'/art_38.npy', pred_wSID)
-                np.save(savedir+'/'+songname+'/sc_2.npy', pred_wsc)
+                if not os.path.exists(savedir):
+                    os.makedirs(savedir)
+                np.savez(savedir+'/'+songname, emb_256=pred_wss, art_38=pred_wSID, sc_2=pred_wsc)
+#                 np.save(savedir+'/'+songname+'/emb_256.npy', pred_wss)
+#                 np.save(savedir+'/'+songname+'/art_38.npy', pred_wSID)
+#                 np.save(savedir+'/'+songname+'/sc_2.npy', pred_wsc)
 
                 """
                 Print result
