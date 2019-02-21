@@ -32,7 +32,24 @@ optional arguments:
   -gid GPU_INDEX, --gpu_index GPU_INDEX
                         Assign a gpu index for processing if cuda. (default: 0)
 ```
-#### Result format
+#### Result
+```
+===============
+Singing Voice Analysis
+Author: Bill Hsieh
+Update in 20190123
+===============
+Songname:  example
+*******
+Artist Similarity: 
+蔡健雅 : 75.01 %
+盧廣仲 : 24.91 %
+*******
+Characteristic Ratio: 100.00 %
+===============
+```
+#### Saving format
+
 ```
 npz file: ['emb_256', 'art_38', 'sc_2']
 emb_256:  Latent space of singing voice. (256 dimension numpy array)
